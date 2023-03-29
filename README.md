@@ -51,20 +51,28 @@ client.once(Events.ClientReady, async c => {
 	const commandData = command.toJSON();
 	await client.application.commands.create(commandData);
 	
-	// Handle the interaction
-	client.on('interactionCreate', async (interaction) => {
-	  if (!interaction.isCommand()) return;
 	
-	  if (interaction.commandName === 'ping') {
-		await interaction.reply('Pong!');
-	  }
-	});
 	
 	
 });
+
+
+
+// Handle the interaction
+client.on('interactionCreate', async (interaction) => {
+	if (!interaction.isCommand()) return;
+  
+	if (interaction.commandName === 'ping') {
+	  await interaction.reply('Pong!');
+	}
+});
 ```
 
-* NOTE --> THe client.once stuff is already present in the base index.js
+* NOTE --> THe client.once stuff is already present in the base index.js, same with client.on
 1. `const command = new SlashCommandBuilder()` --> This line of code initiates a new command, change the __command__ part to any name, you'll need it later so make the name meaningful
+2. `.setName('ping')` --> This line sets the command name
+3. `.setDescription` --> This line sets the command's description
+4. `await client.application.commands.create(commandData)` --> This line registers the command into discord
+5. All the stuff under client.on manages the event stuff for the command, when you make multiple commands you put them under there.
 
 
