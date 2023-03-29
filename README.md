@@ -37,7 +37,7 @@ To setup this template, follow these steps
 To see the list of code snippets avaliable in this template, you can type "ScuffedTemp" and they will all come up ***EXAMPLE:**
 <img width="515" alt="Screen Shot 2023-03-29 at 2 37 24 PM" src="https://user-images.githubusercontent.com/110801525/228673535-fa44df37-3b30-44c1-988b-4d313db8e951.png">
 
-I'll go over each snippet
+I'll go over ONE snippet.
 
 ### Basic SlashCommand Snippet
 ```js
@@ -74,5 +74,17 @@ client.on('interactionCreate', async (interaction) => {
 3. `.setDescription` --> This line sets the command's description
 4. `await client.application.commands.create(commandData)` --> This line registers the command into discord
 5. All the stuff under client.on manages the event stuff for the command, when you make multiple commands you put them under there.
+
+# Other
+## Repo contributions
+If you'd like to contribute to this repo, you may, open a pull request and I may accept it. You'll be added to the list of helpers
+
+## Contact
+If you'd like to contact me for help --> `ScuffedItalian#5158`
+
+## Links
+Link to the discord.js documentation --> [here](https://discordjs.guide/#before-you-begin)
+Link to a good discord.js tutorial series --> [here](https://www.youtube.com/watch?v=eMJfBzUAyEY&list=PL5M74VagS4g9k_o0V8c9gSC0bsBSg2Qlc) **This is a really good tutorial and I advise watching it HEAVILY!**
+
 
 
