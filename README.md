@@ -25,6 +25,10 @@ To setup this template, follow these steps
     "token": "",
     "status": "",
     "username": "" 
-
 }
 ```
+1. Token: Paste your bot's token into the pair of `" "`
+2. Status: Paste your bot's status you'd like it to have, this is optional ***EXAMPLE:***
+<img width="233" alt="Screen Shot 2023-03-29 at 2 30 34 PM" src="https://user-images.githubusercontent.com/110801525/228672271-c4223ed0-f533-43f0-8ee1-a4d0a7d312ef.png">
+3. Username: this is the username of the bot, this is required to an extent. You can COMPLETLY remove this in the index.js file ***EXAMPLE:***
+<img width="233" alt="Screen Shot 2023-03-29 at 2 30 34 PM" src="https://user-images.githubusercontent.com/110801525/228672271-c4223ed0-f533-43f0-8ee1-a4d0a7d312ef.png">
